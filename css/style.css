@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #0D4000;
+    font-family: 'El Messiri', sans-serif;
+    font-size: calc(22px + 0.6vmax);
+    background-color:#6D8068;
+}
+
+@keyframes bg_color {
+    from {background-color: black;}
+    to {background-color: #282828;}
+}
+
+#container {
+    height:100vh;
+    width:auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+
+#bg area:hover {
+    /*this wont work because technically there isn't an image in any given area, it's all just one big image*/
+    filter:blur(2px);
+    filter:hue-rotate(180);
+}
+
+a {
+    color: #990A2E;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B50930;
+
+}
+
+
+/*figure out how to center text vertically but also not cut it out when it overflows (height:100vh doesnt work)*/
+.centered {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:center;
+    align-content:flex-start;
+    
+    width:100%;
+    height:100%;
+    margin-top:50px;
+    
+}
+
+.centered img {
+    max-width:100%;
+    max-height:100%;
+}
+
+p {
+    margin:10px;
+    padding:10px;
+    font-weight:400;
+    width:800px;
+    
+    animation: fadein ease 3s;
+    
+}
+
+@keyframes fadein {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.backbutton {
+    border: none;
+    color: white;
+    padding: 50px 50px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    z-index:2;
+    bottom:20px;
+    right:20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+    background-image:url("../images/favicon/favicon_original.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.halftext {
+ font-size: 50%;
+}
+
+.segway a {
+  color: DarkSeaGreen;
+}
+.segway a:hover {
+ color: MediumSeaGreen;
+}
+
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: DarkSeaGreen;
+  color: white;
+  font-size: 75%;
+  line-height: 150%;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent DarkSeaGreen transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.opioidsunrise {
+  background-image: url("images/afghan poppy field sun rise.jpg");
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Remember to figure out how to loop video!!!!*/
+#bg_video {
+    position: fixed;
+    z-index:-1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.neoliberalbreeding {
+  background-image: url("vids/dreamflowers.mp4");
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scoredpoppy {
+  background-image: url("images/scoredpoppy.png");
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+}
+
+@media only screen and (max-width: 800px) {
+  p {
+    width:400px;
+  }
+}

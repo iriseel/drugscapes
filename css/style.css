@@ -19,12 +19,16 @@ body {
 }
 
 a {
-    color: #990A2E;
+    color: #90A989;
     text-decoration: none;
 }
 
-a:hover {
-    color: #B50930;
+a:visited {
+    
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
 
 }
 
@@ -57,7 +61,6 @@ a:hover {
 }
 
 .instructions {
-    transition: 1s;
     position:fixed;
     left:5rem;
     top:1.5rem;
@@ -70,10 +73,10 @@ a:hover {
 
 .instructions_icon:hover .instructions{
     visibility:visible;
-    animation: fadein ease 3s;
+    animation: fadein ease 1s;
 }
 
-
+sup { vertical-align: top; font-size: 0.6em; line-height:1.5em;padding:5px}
 
 
 /*this wont work because technically there isn't an image in any given area, it's all just one big image
@@ -198,32 +201,36 @@ button {
 
 
 .modal-content {
-  background-color: rgba(0,0,0,.5);
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 90%;
-    
+    background-color: rgba(0,0,0,.5);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+
     color:#6D8068;
     display:flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items:center;
     align-content:flex-start;
-    
+
     position:relative;
     
 }
 
+.modal-content img {
+    max-width:50%;
+    max-height:100%;
+}
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  position:absolute;
+    color: #aaaaaa;
+    position:absolute;
     z-index:3;
     right:1%;
     top:1%;
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .close:hover,
@@ -260,6 +267,7 @@ p {
     margin:10px;
     padding:10px;
     font-weight:400;
+    line-height:1.5em;
     width:800px;
     animation: fadein ease 3s;
     z-index:3;
@@ -290,15 +298,60 @@ p {
     background-position: center;
 }
 
-/* tooltip */
+/* new (failed) tooltip 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    filter: brightness(120%);
+}
+
+.tooltip .tooltiptext {
+    visibility: ;
+    filter: brightness(80%);
+
+    background-color: darkseagreen;
+    color: white;
+    font-size: 75%;
+    text-align: left;
+    line-height: 150%;
+
+    min-width:20vw;
+    min-height:20vw;
+    box-shadow: 0 0 20px 8px black inset;
+    border-radius:50%;
+    padding: 15px;
+    
+    position: absolute;
+    z-index: 3;
+    top: -5px;
+    left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+    
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+    border-radius:50%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+*/
+
+/* COME BACK TO tHIS */
+/* old tooltip */
 .tooltip {
   position: relative;
   display: inline-block;
-  /*border-bottom: 1px dotted black;*/
+    filter: brightness(120%);
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
+    filter: brightness(80%);
   width: 300px;
   background-color: DarkSeaGreen;
   color: white;
@@ -307,17 +360,17 @@ p {
   text-align: left;
   border-radius: 6px;
   padding: 10px 10px;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 100%;
-  left: 50%;
+  left: 150%;
   margin-left: -150px;
 }
 
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  bottom: 100%;  /* At the top of the tooltip */
+  bottom: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -329,6 +382,7 @@ p {
   visibility: visible;
 }
 
+
 .opioidsunrise {
   background-image: url("images/afghan poppy field sun rise.jpg");
   background-attachment: fixed; 
@@ -337,13 +391,13 @@ p {
 }
 
 /*Remember to figure out how to loop reverse video!!!!*/
-#bg_video {
+.bg_video {
     position:fixed;
     z-index:1;
     right: 0;
     bottom: 0;
-    width: 100%; 
-    height: 100%;
+    min-width: 100vw; 
+    min-height: 100vh;
 }
 
 .neoliberalbreeding {

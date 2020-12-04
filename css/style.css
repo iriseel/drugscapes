@@ -41,11 +41,48 @@ a:hover {
     overflow-x: hidden;
 }
 
+.instructions_icon {
+    color:white;
+    font-weight:700;
+    font-size:1.3rem;
+    padding:.2rem 1rem;
+    margin:1rem;
+    border: 1px white solid;
+    opacity:.75;
+    
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:3;
+}
+
+.instructions {
+    transition: 1s;
+    position:fixed;
+    left:5rem;
+    top:1.5rem;
+    
+    z-index:3;
+    color:white;
+    font-size:1.2rem;
+    visibility:hidden;
+}
+
+.instructions_icon:hover .instructions{
+    visibility:visible;
+    animation: fadein ease 3s;
+}
+
+
+
+
+/*this wont work because technically there isn't an image in any given area, it's all just one big image
 #bg area:hover {
-    /*this wont work because technically there isn't an image in any given area, it's all just one big image*/
     filter:blur(2px);
     filter:hue-rotate(180);
 }
+*/
+
 
 .fg {
     position:absolute;

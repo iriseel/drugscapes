@@ -57,7 +57,7 @@
         </div>
         
         <!-- MODAL1 -->
-        <button id="myBtn" style="left:10vh;top:2.5vh;"></button>
+        <button id="myBtn" style="left:17vh;top:3vh;"></button>
 
         <div id="myModal" class="modal">
 
@@ -75,7 +75,7 @@
         <div id="myModal2" class="modal">
 
           <div class="modal-content">
-                <span class="close">&times;</span>
+                <span class="close" style="-webkit-text-stroke: 1.5px black;font-size:1.8em;">&times;</span>
             	<video autoplay muted loop class="bg_video">
                   <source src="vids/dreamflowersbloom.mp4" type="video/mp4">
                   Your browser does not support HTML5 video.
@@ -214,7 +214,7 @@
                 “Some cohorts, particularly less than college educated whites, have lost faith in the American Dream, have little hope for the future, and low levels of resilience and coping skills. This is the population that is most vulnerable to opioid overdose and other deaths of despair, while minorities, who still face objective disadvantages and discrimination, are much more hopeful and resilient.” — <a href="https://www.brookings.edu/research/the-role-of-despair-in-the-opioid-crisis-lessons-from-the-science-of-well-being/">The Brookings Institution, 2020</a>
                 </p>
 
-                <video width="100%" autoplay controls style="padding:20px;text-align:center;margin:auto;">
+                <video width="100%" controls style="padding:20px;text-align:center;margin:auto;">
                     <source src="vids/reagan_address_dream.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -291,7 +291,7 @@
               </p>
                     
                 <!--!!!!!!if $vidclick is true-->
-                <video width="100%" autoplay controls style="padding:20px;text-align:center;margin:auto;">
+                <video width="100%" controls style="padding:20px;text-align:center;margin:auto;">
                     <source src="vids/reagan_address_world.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -683,14 +683,24 @@ span18.onclick = function() {modal18.style.display = "none";}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-    /*THIS STOPS WORKING IF I HAVE MORE THAN ONE EVENT TARGET
-    if (event.target == modal2) {
-    modal2.style.display = "none";
-  }
-  */
+if (event.target == modal) {modal.style.display = "none";}
+if (event.target == modal2) {modal2.style.display = "none";}
+if (event.target == modal3) {modal3.style.display = "none";}
+if (event.target == modal4) {modal4.style.display = "none";}
+if (event.target == modal5) {modal5.style.display = "none";}
+if (event.target == modal6) {modal6.style.display = "none";}
+if (event.target == modal7) {modal7.style.display = "none";}
+if (event.target == modal8) {modal8.style.display = "none";}
+if (event.target == modal9) {modal9.style.display = "none";}
+if (event.target == modal10) {modal10.style.display = "none";}
+if (event.target == modal11) {modal11.style.display = "none";}
+if (event.target == modal12) {modal12.style.display = "none";}
+if (event.target == modal13) {modal13.style.display = "none";}
+if (event.target == modal14) {modal14.style.display = "none";}
+if (event.target == modal15) {modal15.style.display = "none";}
+if (event.target == modal16) {modal16.style.display = "none";}
+if (event.target == modal17) {modal17.style.display = "none";}
+if (event.target == modal18) {modal18.style.display = "none";}
 }
 
     

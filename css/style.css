@@ -18,24 +18,6 @@ body {
     to {background-color: #282828;}
 }
 
-#container {
-    height:100vh;
-    width:auto;
-    display: block;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow-y: hidden;
-    overflow-x: auto;
-}
-
-
-#bg area:hover {
-    /*this wont work because technically there isn't an image in any given area, it's all just one big image*/
-    filter:blur(2px);
-    filter:hue-rotate(180);
-}
-
 a {
     color: #990A2E;
     text-decoration: none;
@@ -46,7 +28,178 @@ a:hover {
 
 }
 
+/*HOMEPAGE STYLING*/
 
+#container {
+    height:100vh;
+    width:1067.8472vh;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#bg area:hover {
+    /*this wont work because technically there isn't an image in any given area, it's all just one big image*/
+    filter:blur(2px);
+    filter:hue-rotate(180);
+}
+
+.fg {
+    position:absolute;
+    z-index:3;  
+}
+
+.fly {
+    left:200vh;
+    animation: fly 20s ease-in infinite;
+}
+
+@keyframes fly {
+    0% {margin-top:-20%;}
+    80% {margin-top: 120%;}
+    100% {margin-top: 120%;}
+}
+
+.flutter {
+  animation: flutter 200s linear infinite;  
+}
+
+@keyframes flutter {
+    0% {margin-left:1100vh;margin-top:0vh;}
+    10% {margin-left:1000vh;margin-top:30vh;}
+    20% {margin-left:900vh;margin-top:20vh;}
+    30% {margin-left:800vh;margin-top:10vh;}
+    40% {margin-left:700vh;margin-top:30vh;}
+    50% {margin-left:600vh;margin-top:20vh;}
+    60% {margin-left:400vh;margin-top:40vh;}
+    70% {margin-left:250vh;margin-top:50vh;}
+    80% {margin-left:100vh;margin-top:60vh;}
+    90% {margin-left:-20vh;margin-top:60vh;}
+    100% {margin-left:-20vh;margin-top:60vh;}
+}
+
+.crawl {
+    left: -20vh;
+    top:80vh;
+    animation: crawl 200s ease-in infinite;  
+    animation-delay:6s;
+}
+
+@keyframes crawl {
+    0% {
+        transform: translate(-20vh, 10vh) rotate(20deg);
+        }
+    90% {
+        transform: translate(1100vh, 10vh) rotate(20deg);
+        }
+    100% {
+        transform: translate(1100vh, 10vh) rotate(20deg);
+        }
+}
+
+.crawl1 {
+  animation: crawl1 200s ease-in infinite;  
+}
+
+@keyframes crawl1 {
+    0% {margin-left:-10vh;margin-top:-10vh;}
+    90% {margin-left:1100vh;margin-top:110vh;}
+    100% {margin-left:1100vh;margin-top:110vh;}
+}
+
+.crawl2 {
+    animation: crawl2 200s ease-in infinite;  
+}
+
+@keyframes crawl2 {
+    0% {margin-left:900vh;margin-top:110vh;}
+    90% {margin-left:-10vh;margin-top:-10vh;}
+    100% {margin-left:-10vh;margin-top:-10vh;}
+}
+
+
+
+/* MODALS */
+
+/*Why does the button keep on getting horizontally squished when you decrease the vh?*/
+button {
+    background-color:;
+    width:1.5vh;
+    height:1.5vh;
+    border-radius:50%;
+    border: 2px solid white;
+    position:absolute;
+    opacity:0.8;
+    filter:blur(3px);
+    animation: buttoncolor ease-in 4s infinite alternate;
+}
+
+
+@keyframes buttoncolor {
+  0%   {background-color:lightgoldenrodyellow;}
+  50%  {background-color:darkolivegreen;}
+  100% {background-color:darkseagreen;}
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+  background-color: rgba(0,0,0,.5);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+    
+    color:#6D8068;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:center;
+    align-content:flex-start;
+    
+    position:relative;
+    
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  position:absolute;
+    z-index:3;
+    right:1%;
+    top:1%;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+/*SUBPAGE STYLING*/
 /*figure out how to center text vertically but also not cut it out when it overflows (height:100vh doesnt work)*/
 .centered {
     display:flex;
@@ -71,9 +224,8 @@ p {
     padding:10px;
     font-weight:400;
     width:800px;
-    
     animation: fadein ease 3s;
-    
+    z-index:3;
 }
 
 @keyframes fadein {
@@ -99,18 +251,6 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-
-.halftext {
- font-size: 50%;
-}
-
-.segway a {
-  color: DarkSeaGreen;
-}
-.segway a:hover {
- color: MediumSeaGreen;
 }
 
 /* tooltip */
@@ -159,14 +299,14 @@ p {
   background-size: cover;
 }
 
-/*Remember to figure out how to loop video!!!!*/
+/*Remember to figure out how to loop reverse video!!!!*/
 #bg_video {
-    position: fixed;
-    z-index:-1;
+    position:fixed;
+    z-index:1;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
+    width: 100%; 
+    height: 100%;
 }
 
 .neoliberalbreeding {

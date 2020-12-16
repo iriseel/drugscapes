@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
 
 
@@ -9,7 +8,7 @@
 body {
     color: #0D4000;
     font-family: 'El Messiri', sans-serif;
-    font-size: calc(22px + 0.6vmax);
+    font-size: calc(16px + 0.5vmax);
     background-color:#6D8068;
 }
 
@@ -64,10 +63,12 @@ a:hover, a:focus {
     position:fixed;
     left:5rem;
     top:1.5rem;
+    max-width:50vw;
     
     z-index:3;
     color:white;
     font-size:1.2rem;
+    font-weight:400;
     visibility:hidden;
 }
 
@@ -76,7 +77,42 @@ a:hover, a:focus {
     animation: fadein ease 1s;
 }
 
-sup { vertical-align: top; font-size: 0.6em; line-height:1.5em;padding:5px}
+p {
+    margin:10px;
+    padding:10px;
+    font-weight:400;
+    line-height:1.5em;
+    max-width:800px;
+    z-index:3;
+}
+
+hr {
+    background-color:#92AD8B;
+    color:#92AD8B;
+    border: none;
+    height: .1px;
+}
+
+@keyframes fadein {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+sup { 
+    vertical-align: top; 
+    font-size: 0.6em; 
+    line-height:1.5em;
+    padding:5px;
+}
+
+footnote { 
+    margin:0px;
+    padding:5px;
+    font-size: 0.6em; 
+    line-height:1.5em;
+    max-width:800px;
+}
 
 
 /*this wont work because technically there isn't an image in any given area, it's all just one big image
@@ -164,9 +200,9 @@ sup { vertical-align: top; font-size: 0.6em; line-height:1.5em;padding:5px}
 
 /* MODALS */
 
-/*Why does the button keep on getting horizontally squished when you decrease the vh?*/
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Why does the button keep on getting horizontally squished when you decrease the vh?*/
 button {
-    background-color:;
     width:1.5vh;
     height:1.5vh;
     border-radius:50%;
@@ -174,23 +210,90 @@ button {
     position:absolute;
     opacity:0.8;
     filter:blur(3px);
-    animation: buttoncolor ease-in 4s infinite alternate;
 }
 
-
-@keyframes buttoncolor {
-  0%   {background-color:lightgoldenrodyellow;}
-  50%  {background-color:darkolivegreen;}
-  100% {background-color:darkseagreen;}
+.chapter0 {
+    background-color:darkred;
 }
 
+.chapter1 {
+    animation: buttoncolor1 ease-in 4s infinite alternate;
+}
+
+@keyframes buttoncolor1 {
+  0%   {background-color:white;}
+  100% {background-color:black;}
+}
+
+.chapter2 {
+    animation: buttoncolor2 ease-in 4s infinite alternate;
+}
+
+@keyframes buttoncolor2 {
+  0%   {background-color:red;}
+  100% {background-color:black;}
+}
+
+.chapter3 {
+    animation: buttoncolor3 ease-in 4s infinite alternate;
+}
+
+@keyframes buttoncolor3 {
+  0%   {background-color:blue;}
+  100% {background-color:black;}
+}
+
+.chapter4 {
+    animation: buttoncolor4 ease-in 4s infinite alternate;
+}
+
+@keyframes buttoncolor4 {
+  0%   {background-color:white;}
+  100% {background-color:black;}
+}
+
+.chapter5 {
+    animation: buttoncolor5 ease-in 4s infinite alternate;
+}
+
+@keyframes buttoncolor5 {
+  0%   {background-color:green;}
+  100% {background-color:black;}
+}
+
+.chapter6 {
+    animation: buttoncolor6 ease-in 4s infinite alternate;
+}
+
+@keyframes buttoncolor6 {
+  0%   {background-color:white;}
+  100% {background-color:black;}
+}
+
+.chapter7 {
+    animation: buttoncolor7 ease-in 4s infinite alternate;
+}
+
+@keyframes buttoncolor7 {
+  0%   {background-color:orange;}
+  100% {background-color:black;}
+}
+
+.chapter8 {
+    animation: buttoncolor8 ease-in 4s infinite alternate;
+}
+
+@keyframes buttoncolor8 {
+  0%   {background-color:yellowgreen;}
+  100% {background-color:black;}
+}
 
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 2; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  padding-bottom: 100px;
+  z-index: 9; /* Sit on top */
+  padding-top: 5vh; /* Location of the box */
+  padding-bottom: 5vh;
     left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -200,13 +303,13 @@ button {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-
 .modal-content {
     background-color: rgba(0,0,0,.5);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 90%;
+    width: 70%;
+    max-width:1000px;
 
     color:#6D8068;
     display:flex;
@@ -217,6 +320,23 @@ button {
 
     position:relative;
     
+    animation: fadein ease 2s;
+    
+}
+
+.modal-content p {
+    width: 80%;
+    max-width:800px;
+}
+
+.modal-content footnote {
+    width: 80%;
+    max-width:800px;
+}
+
+.modal-content hr {
+    width: 80%;
+    max-width:800px;
 }
 
 .modal-content img {
@@ -228,7 +348,7 @@ button {
 .close {
     color: #aaaaaa;
     position:absolute;
-    z-index:3;
+    z-index:10;
     right:1%;
     top:1%;
     font-weight: bold;
@@ -244,8 +364,7 @@ button {
 
 
 
-/*SUBPAGE STYLING*/
-/*figure out how to center text vertically but also not cut it out when it overflows (height:100vh doesnt work)*/
+/*SUBPAGE STYLING (OUTDATED)
 .centered {
     display:flex;
     flex-flow: column nowrap;
@@ -262,21 +381,6 @@ button {
 .centered img {
     max-width:100%;
     max-height:100%;
-}
-
-p {
-    margin:10px;
-    padding:10px;
-    font-weight:400;
-    line-height:1.5em;
-    width:800px;
-    animation: fadein ease 3s;
-    z-index:3;
-}
-
-@keyframes fadein {
-    0% {opacity:0;}
-    100% {opacity:1;}
 }
 
 .backbutton {
@@ -298,6 +402,7 @@ p {
     background-repeat: no-repeat;
     background-position: center;
 }
+*/
 
 /* new (failed) tooltip 
 .tooltip {
@@ -342,8 +447,8 @@ p {
 }
 */
 
-/* COME BACK TO tHIS */
-/* old tooltip */
+/* (ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬) COME BACK TO tHIS */
+/* TOOLTIP */
 .tooltip {
   position: relative;
   display: inline-block;

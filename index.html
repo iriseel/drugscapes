@@ -48,10 +48,11 @@
 
     
     <div id="container">
-        <div class="instructions_icon">
+        <div class="instructions_icon" id="instructions_icon">
             ?
            <div class="instructions">
                 Scroll horizontally to survey. Click the glowing dots to read.<br>
+                To toggle a reading map, click the <b>?</b> icon. <br>
                 Disclaimer: This site is a work-in-progress, full of fits and starts.
             </div>
         </div>
@@ -83,7 +84,7 @@
         </div>
 
         <!-- MODAL2 -->
-        <button id="myBtn2" style="left:27vh;top:43vh;" class="chapter1" title="overdose & escalation"></button>
+        <button id="myBtn2" style="left:46vh;top:9.5vh;" class="chapter1" title="overdose & escalation"></button>
 
         <div id="myModal2" class="modal">
 
@@ -106,7 +107,7 @@
         </div>
         
         <!-- MODAL3 -->
-        <button id="myBtn3" style="left:33vh;top:63vh;" class="chapter1" title="maladaptive coping?"></button>
+        <button id="myBtn3" style="left:27vh;top:43vh;" class="chapter1" title="maladaptive coping?"></button>
 
         <div id="myModal3" class="modal">
 
@@ -129,20 +130,24 @@
         </div>
         
         <!-- MODAL4 -->
-        <button id="myBtn4" style="left:46vh;top:9.5vh;" class="chapter1" title="prescription politics"></button>
+        <button id="myBtn4" style="left:33vh;top:63vh;" class="chapter1" title="prescription politics"></button>
 
         <div id="myModal4" class="modal">
 
           <div class="modal-content">
-                <span class="close">&times;</span>
-            	<img src="images/red_cocaine.jpg">
+            <span class="close">&times;</span>
+              <br>
+              <img src="images/red_cocaine.jpg">
               <p>
-                We already have these sorts of books. It does not take much more stretching of the imagination to come back from the pharmacy with your little bag of prescription politics, or to entertain the suspicion that the suburban housewife next door is surreptitiously popping redpills, or to speculate that the “good life” might be the most tried and true “fix” this country resorts to.
+                We already have these sorts of books. It does not take much more stretching of the imagination to come back from the pharmacy with your little bag of prescription politics, or to entertain the suspicion that the suburban housewife next door is surreptitiously popping redpills,
               </p>
-              <img src="images/suburban_nervine.jpg">
+              <img src="images/suburban_nervine.jpg" style="max-width:50%">
+              <p>
+                or to speculate that the “good life” might be the most tried and true “fix” this country resorts to.
+              </p>
               <p>
                 And is American exceptionalism not the stimulant, the palliative, the pick-me-up, that we keep coming back to, through the defeats of days and decades?</p>
-            <p>
+            <p class="smalltext" style="text-align: right;">
                 … Need I still mention Marx and his thoughts on religion?
             </p>
           </div>
@@ -160,8 +165,11 @@
                 Except, of course, that public health and political science are ultimately not the same thing. White powder is not white power, or even populism, and no liters of bleeding-heart liberalism should drown out that distinction. One is stigmatized, the other stigmatizes; one is criminalized, the other criminalizes; one is disenfranchised, the other self-entitles; one wants to be let live, the other seeks to make die. 
                 </p>
                 <p>
-                    Further stark differences in substance and ideological disorders abound in terms of their relationships to community, culpability, roleplaying, (false) empowerment, belonging, sense of purpose, and ambition; their diametric relationships to escapism and scapegoating.  Although former white supremacists may compare their shed attachments to lingering addictions,<sup><a href="https://www.dhs.gov/sites/default/files/publications/1003_OPSR_TP_Addicted-to-Hate_2017-508.pdf" target="_blank">1</a></sup> perhaps the most direct way to differentiate these two dependencies — both arguably “chronic, relapsing disorders characterized by compulsive behavior despite adverse consequences”<sup><a href="https://www.drugabuse.gov/publications/drugs-brains-behavior-science-addiction/drug-misuse-addiction" target="_blank">2</a></sup> — is simply that in one case, the consequences fall mostly on the user; in the other, they fall on the target.
-                </p>
+                    Further stark differences in substance and ideological disorders abound in terms of their relationships to community, culpability, roleplaying, (false) empowerment, belonging, sense of purpose, and ambition; their diametric relationships to escapism and scapegoating.  
+              </p>
+              <p>
+                  Although former white supremacists may compare their shed attachments to lingering addictions,<sup><a href="https://www.dhs.gov/sites/default/files/publications/1003_OPSR_TP_Addicted-to-Hate_2017-508.pdf" target="_blank">1</a></sup> perhaps the most direct way to differentiate these two dependencies — both arguably “chronic, relapsing disorders characterized by compulsive behavior despite adverse consequences”<sup><a href="https://www.drugabuse.gov/publications/drugs-brains-behavior-science-addiction/drug-misuse-addiction" target="_blank">2</a></sup> — is simply that in one case, the consequences fall mostly on the user; in the other, they fall on the target.
+            </p>
           </div>
         </div>
         
@@ -176,10 +184,13 @@
                     So let us turn to another possible analogy. 
                 </p>
                 <p>
-                    How about the seesawing between bailouts and austerity? The stock market gets high and overdoses. Then banks and big businesses get narcanned with bailouts, sent out from the ER on their merry tottering way, and can expect to be back in the next four years. All the while, the feeble heart pumps its vital blood, the struggling lungs circulate their essential oxygen, and the mind deepens its doubts. 
+                    How about the seesawing between bailouts and austerity? 
                 </p>
                 <p>
-                    The revolving door here is twofold: while personnel alternate between government and business,<sup><a href="https://www.theatlantic.com/magazine/archive/2015/09/how-wall-streets-bankers-stayed-out-of-jail/399368/" target="_blank">1</a></sup> people with substance use disorder (SUD) cycle in and out of imprisonment/treatment and discharge, or sobriety/withdrawal and resumption.
+                    The stock market gets high and overdoses. Then banks and big businesses get narcanned with bailouts, sent out from the ER on their merry tottering way, and can expect to be back in the next four years. All the while, the feeble heart pumps its vital blood, the struggling lungs circulate their essential oxygen, and the mind deepens its doubts. 
+                </p>
+                <p>
+                    The revolving door here is twofold: while personnel <span class="tooltip">alternate<span class="tooltiptext">Eric Holder, the US Attorney General when the Justice Department settled out of court with Wall Street banks like Citigroup and Bank of America returned in 2015 to “the white-shoe law firm that he left in order to join the Justice Department—Covington &amp; Burling, which counts among its clients Bank of America, Citigroup, and Wells Fargo.”</span></span> between government and business,<sup><a href="https://www.theatlantic.com/magazine/archive/2015/09/how-wall-streets-bankers-stayed-out-of-jail/399368/" target="_blank">1</a></sup> people with substance use disorder (SUD) cycle in and out of imprisonment/treatment and discharge, or sobriety/withdrawal and resumption.
                 </p>
                 <p>
                     What syndrome could this be? How many times must we repeat the same mistakes while expecting different results? When will we finally admit we have a problem, and go into treatment? What insurance will cover beyond 14 days of care? How many times will we relapse? 
@@ -192,14 +203,17 @@
 
         <div id="myModal7" class="modal">
 
-          <div class="modal-content">
+          <div class="modal-content withbg">
               <span class="close" style="-webkit-text-stroke: 1.5px black;font-size:1.3em;">&times;</span>
             	<video autoplay muted loop class="bg_video">
                   <source src="vids/dreamflowers.mp4" type="video/mp4">
                   Your browser does not support HTML5 video.
                 </video>
                 <p>
-                There is a disturbing parallel between the way we talk about community and recovery in addiction and in recession. In addiction, we talk about “tough love” and weigh the benefits of “cutting off” one’s addicted loved one(s), at the same time as we pour tens of billions of dollars into the prison industrial complex and exporting drug wars. In recession, we talk about “toughing it out” and weigh the benefits of cutting off welfare, at the same time as we pour trillions of dollars into corporate bailouts. In both cases, people take (<em>not</em> make) the tough decisions and absorb the costs, while institutions commit the lapses of judgement and collect the profits. Banks were bailed out because we  couldn’t bear the costs of their “hitting rock bottom.” Yet when it comes to individual application, we insist that you have to hit rock bottom before true recovery can begin. 
+                There is a disturbing parallel between the way we talk about community and recovery in addiction and in recession. In addiction, we talk about “tough love” and weigh the benefits of “cutting off” one’s addicted loved one(s), at the same time as we pour tens of billions of dollars into the prison industrial complex and exporting drug wars. In recession, we talk about “toughing it out” and weigh the benefits of cutting off welfare, at the same time as we pour trillions of dollars into corporate bailouts. 
+                </p>
+                <p>
+                In both cases, people take (<em>not</em> make) the tough decisions and absorb the costs, while institutions commit the lapses of judgement and collect the profits. Banks were bailed out because we  couldn’t bear the costs of their “hitting rock bottom.” Yet when it comes to individual application, we insist that you have to hit rock bottom before true recovery can begin. 
                 </p>
                 <p>
                 But each bottom lurches lower than the last, and anyways, who’s to say the impact won’t kill you first?
@@ -215,24 +229,37 @@
           <div class="modal-content">
                 <span class="close">&times;</span>
                 <p>
-                And here, it becomes obvious that this analogy too has been a forced one, that corporations are not people after all, for    
-                <br>
+                And here, it becomes obvious that this analogy too has been a forced one, that corporations are not people after all, for     
+                </p>
+                <p class="compresstext">
                 1) corporations have easier access to lifesaving infusions than people<sup><a href="https://www.cdc.gov/vitalsigns/naloxone/index.html?deliveryName=DM8022" target="_blank">1</a></sup>  
-                <br>
-                2) corporations aren’t charged with felonies and thrown into the prison system<sup><a href="https://ig.ft.com/jailed-bankers/" target="_blank">2</a></sup> for the “probable cause” of having had their lives saved<sup><a href="http://www.greenfieldreporter.com/2020/02/18/new_policy_overdose_victims_may_face_charges/" target="_blank">3</a></sup>;
-                    <img src="images/greenfield_screenshot.png" style="display:block;text-align:center;margin:auto;padding:1em;">
-                3) corporations’ “recklessness and poor judgment” aren’t throttled with mandatory<sup><a href="https://www.wingerdenlaw.com/blog/2020/02/can-you-be-charged-with-drug-possession-if-you-overdose/" target="_blank">4</a></sup> minimums,<sup><a href="https://drugpolicy.org/issues/good-samaritan-fatal-overdose-prevention-laws" target="_blank">5</a></sup> but are instead let go as “not fraud”<sup><a href="https://www.theatlantic.com/magazine/archive/2015/09/how-wall-streets-bankers-stayed-out-of-jail/399368/" target="_blank">6</a></sup>   
-                <br>
-                4) corporations don’t have their overdoses livestreamed and go viral on facebook<sup><a href="https://www.statnews.com/2016/09/09/ohio-police-defends-overdose-photo/" target="_blank">7</a></sup> without even the formality of blurring their faces,<sup><a href="https://www.nbcnews.com/storyline/americas-heroin-epidemic/year-after-her-overdose-photo-went-viral-mother-now-says-n813451" target="_blank">8</a></sup>  but instead get their dirty laundry sealed and bankers’ names anonymized in out-of-court settlements<sup><a href="https://www.theatlantic.com/magazine/archive/2015/09/how-wall-streets-bankers-stayed-out-of-jail/399368/" target="_blank">9</a></sup>   
-                <br>
-                5) only corporations have the audacity to sue their first-responders for damages of 40 billion dollars,<sup><a href="https://www.usatoday.com/story/money/business/2014/10/06/aig-trial-henry-paulson-testimony/16817769/" target="_blank">10</a></sup>  or, right after being resuscitated, to file a suit<sup><a href="https://www.insurancebusinessmag.com/us/news/breaking-news/aig-settles-lawsuit-for-more-than-400-million-237200.aspx" target="_blank">11</a></sup> challenging the IRS’s decision to disallow their bogus, tax-haven-generated tax credits<sup><a href="https://www.reuters.com/article/aig-settlement/u-s-says-aig-settles-tax-shelter-lawsuit-forgoes-over-400-mln-tax-credits-idUSKBN2782GL" target="_blank">12</a></sup>    
-                <br>
-                6) only corporations are “offered less punishing terms [for] being bailed out in order to limit the market freefall”<sup><a href="https://www.usatoday.com/story/money/business/2014/10/06/aig-trial-henry-paulson-testimony/16817769/" target="_blank">13</a></sup> when human freefall is met with forced withdrawal,<sup><a href="https://www.vice.com/en/article/z4jjqw/teenage-girl-left-to-die-of-heroin-withdrawal-in-jail-lawsuit-alleges" target="_blank">14</a></sup> adult diapers, and death in a jail cell<sup><a href="https://www.prisonlegalnews.org/news/2019/apr/2/475-million-settlement-pennsylvania-teenagers-withdrawal-death-jail/" target="_blank">15</a></sup>    
-                <br>
-                7) only corporations “too big to fail” are recognized as too weak to save themselves and lent a helping hand on their day of reckoning, where people too small to matter are told to just deal with it, get locked up, have their kids taken away by social services, and are banned for life from federal benefits,<sup><a href="https://www.sentencingproject.org/publications/a-lifetime-of-punishment-the-impact-of-the-felony-drug-ban-on-welfare-benefits/" target="_blank">16</a></sup> even during a pandemic that is killing them RIGHT<sup><a href="https://drugpolicy.org/press-release/2020/08/congress-must-lift-lifetime-felony-drug-ban-snap-and-tanf-during-covid-19" target="_blank">17</a></sup> NOW<sup><a href="https://www.govtrack.us/congress/bills/116/hr7916" target="_blank">18</a></sup>    
-                <br>
-                8) only corporations are neither persecuted nor prosecuted by a “tough-on-crime” policy, but instead have their punishments mitigated by their “systemic importance”<sup><a href="https://www.marketwatch.com/story/house-committee-says-hsbc-wasnt-prosecuted-due-to-too-big-to-jail-fears-2016-07-11" target="_blank">19</a></sup> to the global financial system<sup><a href="https://www.theatlantic.com/magazine/archive/2015/09/how-wall-streets-bankers-stayed-out-of-jail/399368/" target="_blank">20</a></sup>    
-                <br>
+                </p>
+                <p class="compresstext">
+                2) corporations aren’t <span class="tooltip">charged with felonies and thrown into the prison system<span class="tooltiptext">
+                    Here I would like to further note that the jailtime overdose survivors face is up to 2 years and 6 months. It just so happens that Kareem Serageldin’s sentence was also 2 years and 6 months.</span></span><sup><a href="https://ig.ft.com/jailed-bankers/" target="_blank">2</a></sup> for the “probable cause” of having had their lives saved<sup><a href="http://www.greenfieldreporter.com/2020/02/18/new_policy_overdose_victims_may_face_charges/" target="_blank">3</a></sup>;
+                <img src="images/greenfield_screenshot.png" style="display:block;text-align:center;margin:auto;padding:1em;">
+                </p>
+                <p class="compresstext">
+                3) corporations’ “recklessness and poor judgment” aren’t throttled with mandatory<sup><a href="https://www.wingerdenlaw.com/blog/2020/02/can-you-be-charged-with-drug-possession-if-you-overdose/" target="_blank">4</a></sup> minimums,<sup><a href="https://drugpolicy.org/issues/good-samaritan-fatal-overdose-prevention-laws" target="_blank">5</a></sup> but are instead let go as “not fraud”<sup><a href="https://www.theatlantic.com/magazine/archive/2015/09/how-wall-streets-bankers-stayed-out-of-jail/399368/" target="_blank">6</a></sup>
+                </p>
+                <p class="compresstext">
+                4) corporations don’t have their overdoses livestreamed and go viral on facebook<sup><a href="https://www.statnews.com/2016/09/09/ohio-police-defends-overdose-photo/" target="_blank">7</a></sup> without even the formality of blurring their faces,<sup><a href="https://www.nbcnews.com/storyline/americas-heroin-epidemic/year-after-her-overdose-photo-went-viral-mother-now-says-n813451" target="_blank">8</a></sup>  but instead get their dirty laundry sealed and bankers’ names anonymized in out-of-court settlements<sup><a href="https://www.theatlantic.com/magazine/archive/2015/09/how-wall-streets-bankers-stayed-out-of-jail/399368/" target="_blank">9</a></sup> 
+                </p>
+                <p class="compresstext">
+                5) only corporations have the audacity to sue their first-responders for damages of 40 billion dollars,<sup><a href="https://www.usatoday.com/story/money/business/2014/10/06/aig-trial-henry-paulson-testimony/16817769/" target="_blank">10</a></sup>  or, right after being resuscitated, to file a suit<sup><a href="https://www.insurancebusinessmag.com/us/news/breaking-news/aig-settles-lawsuit-for-more-than-400-million-237200.aspx" target="_blank">11</a></sup> challenging the IRS’s decision to disallow their bogus, <span class="tooltip">tax-haven<span class="tooltiptext">
+                    Speaking of accommodation — what is the ratio between homeless shelters and tax havens?</span></span>-generated tax credits<sup><a href="https://www.reuters.com/article/aig-settlement/u-s-says-aig-settles-tax-shelter-lawsuit-forgoes-over-400-mln-tax-credits-idUSKBN2782GL" target="_blank">12</a></sup>
+                </p>
+                <p class="compresstext">
+                6) only corporations are “offered less punishing terms [for] being bailed out in order to limit the market freefall”<sup><a href="https://www.usatoday.com/story/money/business/2014/10/06/aig-trial-henry-paulson-testimony/16817769/" target="_blank">13</a></sup> when human freefall is met with forced withdrawal,<sup><a href="https://www.vice.com/en/article/z4jjqw/teenage-girl-left-to-die-of-heroin-withdrawal-in-jail-lawsuit-alleges" target="_blank">14</a></sup> adult diapers, and <span class="tooltip">death in a jail cell<span class="tooltiptext">
+                    and furthermore is then posthumously ridiculed by the culpable correctional officer on the deceased’s facebook tribute page: “I find this so funny that people want the tax payers to pay for people going through withdraw [sic] in prisons… So, I say let them do there [sic] 'hard' withdraw and spend the money on someone that is gonna appreciate it!!!! You do the crime, it is up to you to do the time!!!!"</span></span><sup><a href="https://www.prisonlegalnews.org/news/2019/apr/2/475-million-settlement-pennsylvania-teenagers-withdrawal-death-jail/" target="_blank">15</a></sup>
+                </p>
+                <p class="compresstext">
+                7) only corporations “too big to fail” are recognized as too weak to save themselves and lent a helping hand on their day of reckoning, where people too small to matter are told to just deal with it, get locked up, have their kids taken away by social services, and are banned for life from federal benefits,<sup><a href="https://www.sentencingproject.org/publications/a-lifetime-of-punishment-the-impact-of-the-felony-drug-ban-on-welfare-benefits/" target="_blank">16</a></sup> even during a pandemic that is killing them right<sup><a href="https://drugpolicy.org/press-release/2020/08/congress-must-lift-lifetime-felony-drug-ban-snap-and-tanf-during-covid-19" target="_blank">17</a></sup> now<sup><a href="https://www.govtrack.us/congress/bills/116/hr7916" target="_blank">18</a></sup>
+                </p>
+                <p class="compresstext">
+                8) only corporations are neither persecuted nor prosecuted by a “tough-on-crime” policy, but instead have their punishments mitigated by their “systemic importance”<sup><a href="https://www.marketwatch.com/story/house-committee-says-hsbc-wasnt-prosecuted-due-to-too-big-to-jail-fears-2016-07-11" target="_blank">19</a></sup> to the global financial system<sup><a href="https://www.theatlantic.com/magazine/archive/2015/09/how-wall-streets-bankers-stayed-out-of-jail/399368/" target="_blank">20</a></sup>
+                </p>
+                <p class="compresstext">
                 9) over and over again, only corporate personhood escapes liquidation where natural personhood is interdicted and indicted, over and over again.
               <p>
                   So no, corporations ultimately are not people, and this seems as good a place to end this false analogy as anywhere else.
@@ -252,17 +279,26 @@
                     This country has long espoused a view of the speech-body relationship that is sometimes fantastical, sometimes fanatical, and always hypocritical. On the one hand, we have “Just say no,” a willfully ignorant attachment to performative speech uttering, as though the sounds emitted from the mouth govern a one-to-one relationship with the substances that go in. What sort of magical thinking, or bad math, or double standard, is this, that we can believe that free speech means free bodies, or rather, that the right kind of speech makes for the right kind of body? More than anything else, this slogan shows that its advocate has a lower tolerance for heroin than for people dying.
                 </p>
                 <p>
-                    On the other hand, we are virtuosos at divorcing mind and matter. That is why here, nothing is free, and everybody is. <span class="tooltip">Free speech is the only public good, or space, that people deserve.
-                    <span class="tooltiptext"><img src="https://images-na.ssl-images-amazon.com/images/I/61am%2B8MtgTL._AC_SY879_.jpg" target="_blank"></span></span>
+                    On the other hand,<sup class="footnote">*</sup> we are virtuosos at divorcing mind and matter. That is why here, nothing is free, and everybody is. <span class="tooltip">Free speech is the only public good, or space, that people deserve.
+                    <span class="tooltiptext" style="text-align:center;"><img src="https://images-na.ssl-images-amazon.com/images/I/61am%2B8MtgTL._AC_SY879_.jpg" target="_blank"></span></span>
                     It is like saying people can live on<sup><a href="https://www.washingtonpost.com/business/2019/10/23/air-pollution-is-getting-worse-data-show-more-people-are-dying/" target="_blank">1</a></sup> air.<sup><a href="https://www.stateoftheair.org/key-findings/" target="_blank">2</a></sup> 
                 </p>
-                  <img src="images/abstinence_fasting.jpg">
+                  <img src="images/abstinence_fasting.jpg" style="width:50%">
                   <p>
                       Or on-air.
                   </p>
-                <img src="images/realitytv_president.jpg">
+                <img src="images/realitytv_president.jpg" style="width:50%">
               
-                <br><br><br>
+              <br><br>
+              <hr>
+                <footnote>
+                    <sup class="footnote">*</sup> Really, these are just different sides of the same hand.
+              </footnote>
+              <img src="images/invisible_hand.jpg" style="max-width:40%">
+              
+            </div>
+            
+            <div class="modal-content" style="margin-top:5rem;">
                 <p>
                     What is the difference between free for all and free fall?
                 </p>
@@ -274,27 +310,6 @@
                   <img src="images/TPUSA5.jpg" style="display:inline-block;width:49%;">
                     <img src="images/TPUSA6.jpeg" style="display:inline-block;width:49%;">
                 </p>
-              
-              <br><br><br>
-              <p>
-                  Really, these are just different sides of the same hand.
-              </p>
-              
-              <img src="images/invisible_hand.jpg">
-              
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              
-              <p>
-                  Speaking of which, get your grubby hands off me!
-              </p>
               
           </div>
         </div>
@@ -321,21 +336,21 @@
 
         <div id="myModal11" class="modal">
 
-          <div class="modal-content">
+          <div class="modal-content withbg">
                 <span class="close" style="-webkit-text-stroke: 1.5px black;font-size:1.3em;">&times;</span>
             	<video autoplay muted loop class="bg_video">
                   <source src="vids/dreamflowersbloom.mp4" type="video/mp4">
                   Your browser does not support HTML5 video.
                 </video>
               
-                <p>
+                <p style="text-align:center;width:60%;line-height:1.4em;">
                     <em>“she let the beast of drug addiction take over her”</em><sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5121004/pdf/nihms-793451.pdf" target="_blank">1</a></sup>
-                    <br>
+                    <br><br>
                     <em>“The drug [heroin] drains its host”</em><sup><a href="https://www.getsmartaboutdrugs.gov/newark/get-involved/photos-past-heroin-and-opioid-art-exhibition-entries" target="_blank">2</a></sup>
-                    <br>
+                    <br><br>
                     <em>“it’s the devil, and once it gets ahold of you, shaking it is almost impossible doing it by yourself.”</em><sup><a href="https://www.columbiamissourian.com/news/local/fighting-for-life-coalition-works-to-reduce-opioid-deaths-and/article_616ec82c-40d4-11e8-affe-276f82991c2c.html" target="_blank">3</a></sup>
                 </p>
-                <p>
+                <p style="margin-top:.5rem">
                     When addiction is cast as a form of invasive “mind control” by a parasitic drug, however, an opportunity for redemption narratives unfurls.
               </p>
           </div>
@@ -352,42 +367,43 @@
                     “They are people injured at work who became addicted to opioids, eventually losing their jobs, homes and family. 
                 </p>
                 <img src="images/theyare_injured.jpg">
-                     
+                <br>    
                 <p>
                     “They're adults who became addicted after being prescribed painkillers for injuries sustained in a car accident as a teen.
                 </p>
-                  <p style="text-align:center;">
-                    <img src="images/theyare_caraccident1.jpg" style="display:inline-block;width:30%;padding-right:5%">
-                    <img src="images/theyare_caraccident2.jpg" style="display:inline-block;width:30%;padding-left:5%">
-                  </p>
+                <div class="img_row">
+                    <img src="images/theyare_caraccident1.jpg" style="width:35%;">
+                    <img src="images/theyare_caraccident2.jpg" style="width:35%;">
+                </div>
+                <br>    
                 <p>
                     “They are women with health conditions – perhaps they had a knee replacement, heart problems or joint pain – who became addicted in midlife.
                 </p>
-                <img src="images/theyare_women.jpg">
+                <div class="img_row">
+                    <img src="images/theyare_women.jpg" style="width:40%;">
+                    <img src="images/theyare_women2.jpeg" style="width:45%;">
+              </div>
+                <br>    
               
                 <p>
                     “They are professionals who'd been to rehab and back more times than their loved ones could count.
                 </p>
-                <p style="text-align:center;">
-                    <img src="images/theyare_professionals.jpg" style="display:inline-block;width:30%;padding-right:10%">
-                    <img src="images/theyare_professionals2.jpg" style="display:inline-block;width:30%;padding-right:10%">
-                </p>
+                <div class="img_row">
+                    <img src="images/theyare_professionals.jpg" style="width:42.5%;">
+                    <img src="images/theyare_professionals2.jpg" style="width:52.5%;">
+                </div>
+                <br>    
                 <p>
                     “They are people living in daily, grinding physical and psychological pain.”<sup><a href="https://www.usnews.com/news/healthiest-communities/articles/2020-10-14/opioid-deaths-americas-other-fatal-health-crisis-continues-during-covid-19" target="_blank">1</a></sup>
                 </p>
-                <p style="text-align:center;">
-                    <img src="images/theyare_inpain.jpg" style="display:inline-block;width:30%;padding-right:5%">
-                    <img src="images/theyare_inpain2.jpg" style="display:inline-block;width:30%;padding-right:5%">
-                </p>
-              
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-              
+                <div class="img_row">
+                    <img src="images/theyare_inpain.jpg" style="width:35%;">
+                    <img src="images/theyare_inpain3.jpg" style="width:35%;">
+                </div>
+              <br>
+            </div>
+            
+            <div class="modal-content" style="margin-top:5rem;">
                 <p>
                   In case you missed it, they are also, by and large, suburban whites.
                 </p>
@@ -408,20 +424,27 @@
                 <p>
                   Could it be that people who aren’t white and suburban don’t also become addicted, or don’t also lose their jobs, homes and family, or don’t also overdose, or don’t also leave behind loved ones when they die, or don’t also struggle?
                 </p>
+            </div>
+            
+            <div class="modal-content" style="margin-top:5rem;">
                 <p>
-                    So when I survey this catalogue of people whose hands I am meant to feel I could clasp without flinching, 
+                    So, when I survey this catalogue of people whose hands I am meant to feel I could clasp without flinching, 
               </p>
-              <img src="images/theyare_Classof2020.jpg" style="max-width:90%">
+              <img src="images/theyare_Classof2000_modified.jpg" style="max-width:100%">
                 <!--
                 <a href="https://people.com/human-interest/america-heroin-epidemic-special-report/"><img src="images/unflinching_collage.jpeg"></a>-->
               <p>
                     I can’t tell if what I feel is more tender or sore. 
                 </p>
-                <br><br><br>
+            </div>
+            
+            <div class="modal-content" style="margin-top:5rem;">
                 <p>
-                    "There was no end to what she could have become," the father of one addicted woman in suburban Massachusetts said. "Now she's locked up in a women's prison. She hasn't seen her kids in over a year. It crushed my family and it's ruined her family." 
+                    "There was no end to what she could have become," the father of one addicted woman in suburban Massachusetts said.  
                 </p>
-
+                <p>
+                    "Now she's locked up in a women's prison. She hasn't seen her kids in over a year. It crushed my family and it's ruined her family." 
+                </p>
                 <p>
                     "And we don't see any end in sight.”<sup><a href="https://abcnews.go.com/TheLaw/story?id=5494972&page=1" target="_blank">3</a></sup> 
                 </p>
@@ -438,45 +461,75 @@
                 <p>
                     Because of addiction’s intersection between choice and disease,  attitudes towards it are particularly telling about not just what we think about these concepts, but with whom we associate them and how. 
                 </p>
+            </div>
+            
+            <div class="modal-content" style="margin-top:5rem;">
         
                 <p>
-                    I will just be blunt. Illicit drugs take turns standing in for the unknown of various biopolitical subjects, an expression of their latent enmity and anti-American neurobiology — opium for the Chinaman’s fiendishness, marijuana for the Mexican’s madness, cocaine for the negro’s craze. (Catch the different tone for oxycontin, where it stands in for the Caucasian’s despair?) These narcotics mark their associated users’ exclusions from prevailing notions of futurity — these people’s conflation with the drugs is seen to reveal, rather than beget, their nonproduction, their idleness, their loitering. They are always the origin of their own downfall. They were never going anywhere, except, god willing, away.<sup><a href="https://abcnews.go.com/TheLaw/story?id=5494972&page=1" target="_blank">1</a></sup>
+                    I will just be blunt. Illicit drugs take turns standing in for the unknown of various biopolitical subjects, an expression of their latent enmity and anti-American neurobiology — opium for the Chinaman’s fiendishness, marijuana for the Mexican’s madness, cocaine for the negro’s craze. (Catch the different tone for oxycontin, where it stands in for the Caucasian’s despair?)  
                 </p>
-              
+                <p>
+                    These narcotics mark their associated users’ exclusions from prevailing notions of futurity — these people’s conflation with the drugs is seen to reveal, rather than beget, their nonproduction, their idleness, their loitering. They are always the origin of their own downfall. They were never going anywhere, except, god willing, <span class="tooltip">away<span class="tooltiptext">
+                    "People say that heroin went away. It's never gone anywhere," said Special Agent Douglas Collier of the New Jersey division of the DEA. "But the user group has changed. The old time heroin user was the guy on the street corner. Now we have kids from the suburbs."</span></span>.<sup><a href="https://abcnews.go.com/TheLaw/story?id=5494972&page=1" target="_blank">1</a></sup>
+                </p>
+            </div>
+
+            <div class="modal-content" style="margin-top:5rem;">
+                
                 <h3 style="margin-bottom:5%;width:70%;text-align:left;">chinese opium</h3>
+                
+                <img src="images/chinese_slave_dealer.jpg" 
+                     style="width:60%; transform: rotate(-10deg);margin-left:-55%;z-index:2;">
+                <img src="images/yellowperil_movie.png" 
+                     style="width:65%; transform: rotate(5deg);margin-right:-55%;margin-top:-70%;z-index:1;">
 
-                <img src="images/chinese_slave_dealer.jpg" style="transform: rotate(-10deg);margin-left:-35%;z-index:1;z-index:2;">
-                <img src="images/yellowperil_movie.png" style="transform: rotate(5deg);margin-right:-45%;margin-top:-60%;z-index:1;">
-
-                <br><br><br><br><br><br>
+                <br><br><br><br><br>
                 <h3 style="margin-bottom:5%;width:90%;text-align:right;">african-american cocaine</h3>
-                <img src="images/negro_cocaine_fiends_cut.jpg" style="width:60%;transform: rotate(-5deg);margin-left:-30%;z-index:3;">
-                <img src="images/race_riot_cut.jpg" style="width:40%;transform: rotate(5deg);margin-right:-45%;margin-top:-32%;z-index:4;">
+                <img src="images/negro_cocaine_fiends_cut.jpg" 
+                     style="width:75%;transform: rotate(-5deg);margin-left:-40%;z-index:3;">
+                <img src="images/race_riot_cut.jpg" 
+                     style="width:40%;transform: rotate(5deg);margin-right:-55%;margin-top:-32%;z-index:4;">
 
                 <h3 style="margin-top:-10%;margin-bottom:2%;width:80%;text-align:left;">mexican marijuana</h3>
-                <img src="images/oriental_mexican.jpg" style="transform: rotate(-8deg);margin-left:-40%;z-index:4;">
-                <img src="images/mexico_locoed.jpg"  style="transform: rotate(5deg);margin-right:-45%;margin-top:-60%;z-index:6;">
+                <img src="images/oriental_mexican.jpg" 
+                     style="width:60%;transform: rotate(-8deg);margin-left:-45%;z-index:4;">
+                <img src="images/mexico_locoed.jpg"  
+                     style="width:60%; transform: rotate(5deg);margin-right:-60%;margin-top:-60%;z-index:6;">
 
                 <br>
-              
+            </div>
+            
+            <div class="modal-content" style="margin-top:5rem;">
                 <p>
                     Another way to put this is that mind-altering substances work their spells on only a certain demographic of minds. When it comes to BIPOC, they lose their efficacy and do not alter but merely unsheathe a hereditary “nature.” 
                 </p>
                 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4IVNkUr8t4k?start=82" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="iframe_container"> 
+                    <iframe class="responsive_iframe" src="https://www.youtube.com/embed/4IVNkUr8t4k?start=82" allowfullscreen></iframe>
+                </div>
+                    
                 <p style="font-size:.75em">
-                    Transcript: “What you really need to do is go back in the ’30s, when they outlawed all types of drugs in Kansas [and] across the United States. What was the reason why they did that? One of the reasons why, I hate to say it, was that the African Americans, they were basically users and they basically responded the worst off to those drugs just because of their character makeup, their genetics and that.” — Republican Rep. Steve Alford of the Kansas House, 2018
+                    Transcript: “What you really need to do is go back in the ’30s, when they outlawed all types of drugs in Kansas [and] across the United States. What was the reason why they did that? One of the reasons why, I hate to say it, was that the African Americans, they were basically users and they basically responded the worst off to those drugs just because of their character makeup, their genetics<sup class="footnote">*</sup> and that.” — Republican Rep. Steve Alford of the Kansas House, 2018
                 </p>
-              
-                <p>
-                    (Just to be clear — genetic predispositions to addiction do<sup><a href="https://www.drugabuse.gov/publications/drugfacts/genetics-epigenetics-addiction" target="_blank">2</a></sup> exist,<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3506170/" target="_blank">3</a></sup> but unlike what goes on outside the body, they aren’t segregated along racial lines.<sup><a href="https://blogs.scientificamerican.com/voices/racial-differences-in-addiction-and-other-disorders-arent-mostly-genetic/" target="_blank">4</a></sup>)
-                </p>
+                
+                <br><br>
+                <hr>
+                <footnote>
+                    <sup class="footnote">*</sup>Just to be clear — genetic predispositions to addiction do<sup><a href="https://www.drugabuse.gov/publications/drugfacts/genetics-epigenetics-addiction" target="_blank">2</a></sup> exist,<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3506170/" target="_blank">3</a></sup> but unlike what goes on outside the body, they aren’t segregated along racial lines.<sup><a href="https://blogs.scientificamerican.com/voices/racial-differences-in-addiction-and-other-disorders-arent-mostly-genetic/" target="_blank">4</a></sup>
+                </footnote>
+            </div>
+            
+            <div class="modal-content" style="margin-top:5rem;">
                 <p>
                     The fear of mind control and losing one’s mind is the privilege of those who can take their intellect for granted, after all. Even if such a point of view can no longer be espoused in so many words, the practical results of the criminal justice system show that there still is a line, spongy like a buffer zone, between the victim who is extenuated by circumstance, and the “accomplice to murder”<sup><a href="https://www.nytimes.com/1988/03/01/us/mrs-reagan-assails-drug-users.html" target="_blank">5</a></sup> who is profiled “into prison and throw away the key.”<sup><a href="https://nyti.ms/2GAdod" target="_blank">6</a></sup> 
                 </p>
               
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bczHLJ6ClbQ?start=5465" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>Who owns the car? Who has a driver's license?</p>
+                <video width="80%" controls style="padding:20px;text-align:center;margin:auto;">
+                    <source src="vids/car_without_brakes.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <p>Who owns the car? Who has a driver's license? Insurance?</p>
           </div>
         </div>    
 
@@ -534,14 +587,14 @@
                 <p>
                     On the flipside, “ladies of culture” excluded from professionalization also had their own justifications, as one anonymous representative explained: 
                 </p>
-                <p style="width:70%;margin-top:-.5em;line-height:1.25em">
+                <p style="width:65%;" class="compresstext">
                         "I am the last woman in the world to make excuses for my acts, but you don’t know what morphine means to some of us, many of us, modern women without professions, without beliefs. Morphine makes life possible. It adds to truth a dream. What more does religion do? Perhaps I shock you. What I mean is that truth alone is both not enough and too much for us. Each of us must add to it his or her dream, believe me. I have added mine; I make my life possible by taking morphine."<sup><a href="http://www.jstor.org/stable/j.ctvk12rb0" target="_blank">2</a></sup>
                 </p>
           </div>
         </div>
         
         <!-- MODAL17 -->
-        <button id="myBtn17" style="left:456.5vh;top:10.8vh;background-color:aqua" class="chapter4" title="lost faith, bad faith"></button>
+        <button id="myBtn17" style="left:435vh;top:43vh;" class="chapter4" title="lost faith, bad faith"></button>
 
         <div id="myModal17" class="modal">
 
@@ -551,48 +604,55 @@
                     Today, dreamless truth continues to drive the same demographic to morphine.
                 </p>
                 <p>
-                    “Some cohorts, particularly less than college educated whites, have lost faith in the American Dream, have little hope for the future, and low levels of resilience and coping skills. This is the population that is most vulnerable to opioid overdose and other deaths of despair, while minorities, who still face objective disadvantages and discrimination, are much more hopeful and resilient.” — The Brookings Institution, 2020<sup><a href="https://www.brookings.edu/research/the-role-of-despair-in-the-opioid-crisis-lessons-from-the-science-of-well-being" target="_blank">1</a></sup> 
+                    “Some cohorts, particularly less than college educated whites, have lost faith in the American Dream, have little hope for the future, and low levels of resilience and coping skills. This is the population that is most vulnerable to opioid overdose and other deaths of despair, while minorities, who still face objective disadvantages and discrimination, are much more hopeful and resilient.” — "The role of despair in the opioid crisis," <em>The Brookings Institution</em><sup><a href="https://www.brookings.edu/research/the-role-of-despair-in-the-opioid-crisis-lessons-from-the-science-of-well-being" target="_blank">1</a></sup> 
                 </p>
                 
-                <video width="100%" controls style="padding:20px;text-align:center;margin:auto;">
+                <video width="80%" controls style="padding:20px;text-align:center;margin:auto;">
                     <source src="vids/reagan_address_dream.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
               
                 <p>
-                    “If you feel like the American dream is no longer accessible, then one may also feel that, ‘Well, it’s not really worth investing in myself ... because investing (Financially speaking, then, opioid use disorder is a wasting disease.) in yourself is one way to access the fruits of the American dream.” — The True Cause of the Opioid Epidemic<sup><a href="https://www.theatlantic.com/health/archive/2020/01/what-caused-opioid-epidemic/604330/" target="_blank">2</a></sup>
+                    “If you feel like the American dream is no longer accessible, then one may also feel that, ‘Well, it’s not really worth <span class="tooltip">investing <span class="tooltiptext">(Financially speaking, then, opioid use disorder is a wasting disease.) </span></span> in myself ... because investing<sup class="footnote">*</sup> in yourself is one way to access the fruits of the American dream.” — "The True Cause of the Opioid Epidemic," <em>The Atlantic</em><sup><a href="https://www.theatlantic.com/health/archive/2020/01/what-caused-opioid-epidemic/604330/" target="_blank">2</a></sup>
                 </p>
-                <p>
-                    Speaking of investment and the American Dream:
-                </p>
-                <p>
-                    In 2015, Ohio officials began signing up inmates for Medicaid so that they could receive addiction treatment after leaving prison. The Ohio Prisons director himself supported the initiative, telling reporters, “I believe it will reduce the number of people returning to prison. Our <span class="tooltip">investment 
-                    <span class="tooltiptext">Financially speaking, then, opioid use disorder is a wasting disease.</span></span>
-                    is in communities, not prison. <span class="tooltip">
-                        I’m not going to build another damn prison."
-                            <span class="tooltiptext">
-                            Which begs the question — when states began their nine-fold increase on correctional spending in 1985, what was being invested in then? Or rather, whose communities were the prisons an investment for?
-                            </span>
-                    </span><sup><a href="https://www.dailyadvocate.com/news/crime/2895/state-pushes-medicaid-sign-ups-for-inmates" target="_blank">3</a></sup>
-                </p>
-                <br>
-                <img src="https://www.sentencingproject.org/wp-content/uploads/2020/08/3-state-expenditures.png" style="min-width:80%;text-align: center;margin:auto;">
+              
+              <br><br>
+              <hr>
+                <footnote>
+                    <sup class="footnote">*</sup>Speaking of investment and the American Dream:
+                </footnote>
+                <footnote>
+                    In 2015, Ohio officials began signing up inmates for Medicaid so that they could receive addiction treatment after leaving prison. The Ohio Prisons director himself supported the initiative, telling reporters, “I believe it will reduce the number of people returning to prison. Our investment is in communities, not prison. I’m not going to build another damn prison."<sup><a href="https://www.dailyadvocate.com/news/crime/2895/state-pushes-medicaid-sign-ups-for-inmates" target="_blank">3</a></sup>
+                </footnote>
+                <footnote>
+                    Which begs the question — when states began their nine-fold increase on correctional spending in 1985,
+                </footnote>
+                    <img src="https://www.sentencingproject.org/wp-content/uploads/2020/08/3-state-expenditures.png" style="width:50%;text-align: center;margin:auto;">
+                <footnote>
+                    what was being invested in then? Or rather, whose communities were the prisons an investment for?
+                </footnote>
                 
           </div>
         </div>
 
         <!-- MODAL18 -->
-        <button id="myBtn18" style="left:435vh;top:43vh;" class="chapter4" title="no excuses"></button>
+        <button id="myBtn18" style="left:456.5vh;top:10.8vh;" class="chapter4" title="no excuses"></button>
 
         <div id="myModal18" class="modal">
 
           <div class="modal-content">
                 <span class="close">&times;</span>
                 <p>
-                    But let us return to our 19th-century neurasthenic ladies of culture. Around the same time as these ladies were assuaging their nerves with morphine, Chinese immigrants were arriving in the U.S. for the 1850s Gold Rush. When it came to the Chinese opium smoker, reasoning went in a simpler direction: “Chinaman likee be with Chinaman and smoke opium.”<sup><a href="https://immigrants.harpweek.com/ChineseAmericans/Items/Item108.htm" target="_blank">1</a></sup> 
-              </p>
+                    But let us return to our 19th-century neurasthenic ladies of culture. Around the same time as these ladies were assuaging their nerves with morphine, Chinese immigrants were arriving in the U.S. for the 1850s Gold Rush. When it came to the Chinese opium smoker, reasoning went in a simpler direction:
+                </p>
+                <p class="compresstext" style="text-align:center">
+                    “Chinaman likee be with Chinaman and smoke opium.”<sup><a href="https://immigrants.harpweek.com/ChineseAmericans/Items/Item108.htm" target="_blank">1</a></sup>
+                </p>
                 <p>
-                    More eloquently, “The Chinaman is a thorn in the side of society — a foreign substance that seems incapable of assimilation and absorption into the body.”<sup><a href="https://immigrants.harpweek.com/ChineseAmericans/Items/Item108.htm" target="_blank">2</a></sup> 
+                    More eloquently, 
+                </p>
+                <p class="compresstext" style="text-align:center">
+                    “The Chinaman is a thorn in the side of society — a foreign substance that seems incapable of assimilation and absorption into the body.”<sup><a href="https://immigrants.harpweek.com/ChineseAmericans/Items/Item108.htm" target="_blank">2</a></sup> 
               </p>
                 <p>
                     No appeals to frayed nerves or an impossible life were made in his defense, even though these “muddy-colored human beings”<sup><a href="https://immigrants.harpweek.com/ChineseAmericans/Items/Item108.htm" target="_blank">3</a></sup> mostly came to American shores as solitary indentured laborers; could expect little to no contact with family back home or even women here after the 1875 Page Act banned the immigration of all East Asian women; and performed backbreaking labor in a land that declared them “an absolute alien”<sup><a href="https://immigrants.harpweek.com/ChineseAmericans/Items/Item046.htm" target="_blank">4</a></sup> with “no power of assimilation, because he is not a desirable citizen, and because he keeps away those who are desirable citizens.”<sup><a href="https://immigrants.harpweek.com/ChineseAmericans/Items/Item108.htm" target="_blank">5</a></sup>
@@ -612,7 +672,7 @@
                     African-Americans’ cocaine use was also not neurasthenically rationalized. 
                 </p>
 
-                <img src="images/use_of_cocaine_among_negroes.jpg">
+                <img src="images/use_of_cocaine_among_negroes.jpg" style="width:50%;">
 
                 <p>
                     “It has been authoritatively stated,” a 1910 Federal survey asserted, “that cocaine is often the direct incentive to the crime of rape by the Negroes of the South and other sections of the country.”<sup><a href="http://www.jstor.org/stable/40257908" target="_blank">1</a></sup>
@@ -631,7 +691,7 @@
                     In this hierarchy of understanding converge all the usual associations of Caucasians with interiority, psychology, harmlessness, and pain. Complementing these assumptions is a view that, unlike hypersexualized but undersensitive people of color, white Americans are as far removed from sensory pleasure as bandaids.  Hence their addiction is pain-relieving rather than pleasure-seeking, a symptom rather than a condition, enriched with all the philosophical, socioeconomic, and geopolitical complexities of a world.
                 </p>
 
-                <video width="100%" controls style="padding:20px;text-align:center;margin:auto;">
+                <video width="80%" controls style="padding:20px;text-align:center;margin:auto;">
                     <source src="vids/reagan_address_world.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -639,9 +699,8 @@
                 <p>
                     But you can’t lose a world if it never belonged to you to begin with, now can you? 
                 </p>
-              
                 <p>
-                    In this crisis people are dying “deaths of despair.” Have people not been dying, despairing even, all these years?
+                    In this crisis people are dying “deaths of despair.” Have people not been dying, to say nothing of despairing, all these years?
                 </p>
           </div>
         </div>
@@ -654,7 +713,13 @@
           <div class="modal-content">
                 <span class="close">&times;</span>
                 <p>
-                    The Fermi Paradox is really not much of a paradox at all. The aliens have not visited us simply because they are loathe to leave their gated cosmoses. “I’m afraid to ride the space shuttle,’’ says one indignant extraterrestrial. “You’re constantly afraid that young terrestrials are going to get on and terrorize people - rob, beat them up, even shoot people. Why should ordinary galaxens be endangered just because terrestrials live in bad conditions?’’ this commentator asks, warming to its subject. “Sure, I’m sympathetic, but my sympathy has its limits. If drugs are the main problem, why can’t responsible terrestrials keep drugs under control in their planet?”
+                    The Fermi Paradox is really not much of a paradox at all. The aliens have not visited us simply because they are loathe to leave their gated cosmoses. 
+                </p>
+                <p>
+                    “I’m afraid to ride the space shuttle,” says one indignant extraterrestrial. “You’re constantly afraid that young terrestrials are going to get on and terrorize people - rob, beat them up, even shoot people. Why should ordinary galaxens be endangered just because terrestrials live in bad conditions?” this commentator asks, warming to its subject.  
+                </p>
+                <p>
+                    “Sure, I’m sympathetic, but my sympathy has its limits. If drugs are the main problem, why can’t responsible terrestrials keep drugs under control in their planet?”
                 </p>
                 <img src="images/flammarion.jpg">
           </div>
@@ -668,7 +733,10 @@
           <div class="modal-content">
                 <span class="close">&times;</span>
                 <p>
-                    One may accurately point out that in the current opioid crisis, the first wave of addiction and overdose was indeed set off by a pursuit of pain relief shepherded by physicians and pharma. 19th-century matronly “morphinism” was also mostly iatrogenic. Which leads us into another set of questions: Who gets to participate in the culture of medication? Who gets to be prescribed, rather than proscribed, into addiction? Who gets to descend from licit to illicit substance use? Who has access to experts, and therefore is not expected to have known any better?
+                    One may accurately point out that in the current opioid crisis, the first wave of addiction and overdose was indeed set off by a pursuit of pain relief shepherded by physicians and pharma. 19th-century matronly “morphinism” was also mostly iatrogenic. 
+                </p>
+                <p>
+                    Which leads us into another set of questions: Who gets to participate in the culture of medication? Who gets to be prescribed, rather than proscribed, into addiction? Who gets to descend from licit to illicit substance use? Who has access to experts, and therefore is not expected to have known any better?
                 </p>
 
                 <img src= "images/pillmill.jpg" alt="A couple buy some narcotics from an apothecary whose assistant, Death, works with a pestle and mortar in the back room. Coloured lithograph by J. Grandville.">
@@ -689,28 +757,34 @@
                 <p>
                     Who will be equipped, rather than bombarded by, the artillery necessary to ultimately survive the War on Drugs, this “battle for liberty from the enslavement of drug addiction”?<sup><a href="https://www.reaganlibrary.gov/archives/speech/proclamation-5537-national-drug-abuse-education-and-prevention-week-and-national" target="_blank">1</a></sup>  Which casualties of war will be shrugged off as collateral damage, the budget deficits cut from their flesh? 
                 </p>
-
-                <p style="color:aliceblue">
+                <p style="color:#BBDAB3;width:70%;display:inline-block;margin:auto;">
                     “… outreach workers in several cities say that while funds and attention have been directed to aid white opioid and heroin users in the suburbs, they are still struggling to get the resources they need to support minorities who are dealing with the same addiction.”<sup><a href="https://www.pbs.org/wgbh/frontline/article/how-the-heroin-epidemic-differs-in-communities-of-color/" target="_blank">2</a></sup>
                 </p>
-                <p style="color:bisque">
+                <br>
+                <p style="color:#92AD8B;width:70%;display:inline-block;margin:auto;">
                     “… this epidemic has garnered nation-wide attention, generated significant federal and state funding for prevention, treatment, and recovery and shaped the priorities of many local communities.
               </p>
-              <p style="color:bisque">
+              <p style="color:#92AD8B; margin-top:-.3em;width:70%;display:inline-block;margin:auto;">
                     “Attention to this epidemic has focused primarily on White suburban and rural communities. Less attention has focused on Black/African American* communities which are similarly experiencing dramatic increases in opioid misuse and overdose deaths. The rate of increase of Black/African American drug overdose deaths between 2015-2016 was 40 percent compared to the overall population increase at 21 percent. This exceeded all other racial and ethnic population groups in the U.S.5 From 2011-2016, compared to all other populations, Black/African Americans had the highest increase in overdose death rate for opioid deaths involving synthetic opioids like fentanyl and fentanyl analogs.”<sup><a href="https://store.samhsa.gov/sites/default/files/SAMHSA_Digital_Download/PEP20-05-02-001_508%20Final.pdf" target="_blank">3</a></sup>
                 </p>
-                <p style="color:cornsilk">
+                <br>
+                <p style="color:#B5BF9B;width:70%;display:inline-block;margin:auto;">
                     “This lower access to prescription opioids for Black/ African Americans contributes to at least two adverse outcomes: a myth of Black/African Americans being “perversely protected” from the opioid crisis is spread and the potential for severe under-treatment or mistreatment of pain for Black/African Americans with severely painful medical conditions such as sickle cell disease, certain cancers, HIV/AIDS and other autoimmune diseases. The data show that Black/ African Americans are not “protected” from this epidemic. And, under-prescribing in some cases may have life-threatening consequences for people affected with pain disorders.”<sup><a href="https://store.samhsa.gov/sites/default/files/SAMHSA_Digital_Download/PEP20-05-02-001_508%20Final.pdf" target="_blank">4</a></sup>
                 </p>
-                <p style="color:floralwhite">
+                <br>
+                <p style="color:#81A172;width:70%;display:inline-block;margin:auto;">
                     “Indeed, not only are black and brown people who use drugs more likely to be incarcerated than white drug users, they are also less likely to be seen by healthcare providers and offered addiction treatment, counseling or tools for prevention of overdose and injection related infections. If they do receive medical treatment for opioid dependence, they are more likely than their white counterparts to receive methadone, under DEA surveillance in stigmatized methadone clinics, than to receive buprenorphine, which is pharmacologically similar to methadone but can be prescribed in the privacy of a doctor’s office and taken at home.
                 </p>
-                <p style="color:floralwhite">
+                <p style="color:#81A172; margin-top:-.3em;width:70%;display:inline-block;margin:auto;">
                     “… to legalize the use of buprenorphine by private doctors required associating it with less stigmatized suburban white populations, and where economic motivations led buprenorphine’s manufacturer to market to insured, employed, largely white clientele. As a result, methadone clinics and office-based buprenorphine have carved out two different clinical spaces for two opioid maintenance therapies: public versus private practices, tightly DEA regulated versus less regulated, symbolically associated with poverty versus affluence, urban versus suburban or rural, and black versus white.”<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5121004/pdf/nihms-793451.pdf" target="_blank">5</a></sup>
                 </p>
+                <br>
                 <p>
                     People with a substance use disorder who meet the criteria of skin and suburbia can therefore be grieved and succored as hostages to their own biology, whereas those who fail the qualifications remain stuck in the default characterization — inseparable and irredeemable from it.
                 </p>
+            </div>
+            
+            <div class="modal-content" style="margin-top:5rem;">
                 <p>
                     How far away are we from a 1:100 sentencing disparity between prescription opioids and fentanyl?
                 </p>
@@ -749,16 +823,16 @@
                     Now, war.
                 </p>
                 <p>
-                    “The toll [of 2015 drug overdoses], as the White House commission on the crisis put it, is the <b style="color:white;">equivalent of the 9/11 attacks</b> every three weeks.
+                    “The toll [of 2015 drug overdoses], as the White House commission on the crisis put it, is the <span style="color:#BBDAB3;">equivalent of the 9/11 attacks</span> every three weeks.
                 </p>
                 <p>
-                    “Addiction is at its essence a <b style="color:white;">hijacking</b>. Parts of the brain that are dedicated to rewarding behavior and triggering feelings of satisfaction and calm are <b style="color:white;">kidnapped</b> by opioid drugs to induce a temporary state of ease and even euphoria.
+                    “Addiction is at its essence a <span style="color:#BBDAB3;">hijacking</span>. Parts of the brain that are dedicated to rewarding behavior and triggering feelings of satisfaction and calm are <span style="color:#BBDAB3;">kidnapped</span> by opioid drugs to induce a temporary state of ease and even euphoria.
                 </p>
                 <p>
-                    “Opioids are particularly adept at such <b style="color:white;">snatching and seizing</b>. The body has its own <b style="color:white;">SWAT team</b> that swoops in when pain erupts: receptors on nearly every cell in the body are primed to sound the alarm when you, say, put your hand on a hot stove or stub your toe. Opioid receptors populate cells not just in the body, but in the brain and spinal cord as well. Their job is to tone down the firing pain signals—the fast breathing, the feeling of panic and the excruciating feeling of ouch!—as quickly as possible. Opioid drugs target these receptors and magnify the body’s natural painkilling response.
+                    “Opioids are particularly adept at such <span style="color:#BBDAB3;">snatching and seizing</span>. The body has its own <span style="color:#BBDAB3;">SWAT team</span> that swoops in when pain erupts: receptors on nearly every cell in the body are primed to sound the alarm when you, say, put your hand on a hot stove or stub your toe. Opioid receptors populate cells not just in the body, but in the brain and spinal cord as well. Their job is to tone down the firing pain signals—the fast breathing, the feeling of panic and the excruciating feeling of ouch!—as quickly as possible. Opioid drugs target these receptors and magnify the body’s natural painkilling response.
                 </p>
                 <p>
-                    “Ron still considers getting high every once in a while. But now his <b style="color:white;">thinking brain</b> takes over and quells the urge that rises from the <b style="color:white;">deeper, baser brain</b> that is ruled by the <b style="color:white;">mission</b> to feel good at all costs.”<sup><a href="https://time.com/life-after-opioid-addiction/" target="_blank">1</a></sup>
+                    “Ron still considers getting high every once in a while. But now his <span style="color:#BBDAB3;">thinking brain</span> takes over and quells the urge that rises from the <span style="color:#BBDAB3;">deeper, baser brain</span> that is ruled by the <span style="color:#BBDAB3;">mission</span> to feel good at all costs.”<sup><a href="https://time.com/life-after-opioid-addiction/" target="_blank">1</a></sup>
                 </p>
                 <p>
                     I do not think it a mere coincidence that the language of terrorism and military litter, indeed organize, <em>Time</em>’s description of addiction.
@@ -805,7 +879,7 @@
                 <p class="caption">2011, Afghanistan: A corporal stands in an opium poppy field while performing a foot patrol in the town of Sangin.</p>
 
                 <img src="images/philippines_drugwar2.jpg">
-                <p class="caption">Neighbors said Michael Araja, 29, was killed by two men riding by on a motorbike — a tactic sponsored by the Philippines<sup><a href="https://www.hrw.org/news/2018/06/19/philippines-scourge-killers-motorbikes#" target="_blank">1</a></sup> police,<sup><a href="https://www.amnesty.org/en/latest/news/2017/01/philippines-the-police-murderous-war-on-the-poor/" target="_blank">2</a></sup> who in turn received at least $14 million from the U.S. 2014-2018,<sup><a href="https://filtermag.org/philippines-drugs-court/" target="_blank">3</a></sup> and continue to receive funding as of this<sup><a href="https://thediplomat.com/2020/09/us-bill-aims-to-end-aid-to-philippines-military-and-police/" target="_blank">4</a></sup> writing.<sup><a href="https://www.govtrack.us/congress/bills/116/hr8313" target="_blank">5</a></sup>
+                <p class="caption">2016, Philippines: Neighbors said Michael Araja, 29, was killed by two men riding by on a motorbike — a tactic sponsored by the Philippines<sup><a href="https://www.hrw.org/news/2018/06/19/philippines-scourge-killers-motorbikes#" target="_blank">1</a></sup> police,<sup><a href="https://www.amnesty.org/en/latest/news/2017/01/philippines-the-police-murderous-war-on-the-poor/" target="_blank">2</a></sup> who in turn received at least $14 million from the U.S. 2014-2018,<sup><a href="https://filtermag.org/philippines-drugs-court/" target="_blank">3</a></sup> and continue to receive funding as of this<sup><a href="https://thediplomat.com/2020/09/us-bill-aims-to-end-aid-to-philippines-military-and-police/" target="_blank">4</a></sup> writing.<sup><a href="https://www.govtrack.us/congress/bills/116/hr8313" target="_blank">5</a></sup>
                 </p>
           </div>
         </div>
@@ -860,6 +934,7 @@
     
         </div>
         
+         <img src="images/drugscapes_bg/reading_line_1080px_min.png" style="height:100vh;position:absolute;z-index:1;opacity:0;transition:2s;" id="reading_key" alt="reading key">
         
         <!--THIS ISNT WORKING, IT JUST DEFAULTS TO 1080PX-->
         <picture>
@@ -951,6 +1026,23 @@
     
     
 <script>
+// clicking instructions_icon toggles reading key
+document.getElementById("instructions_icon").onclick = function() {reading_key()};
+
+function reading_key() {
+    if(document.getElementById("reading_key").style.opacity=="0"){
+        document.getElementById("reading_key").style.opacity=".5";
+        document.getElementById("instructions_icon").style.color="gray";
+        document.getElementById("instructions_icon").style.border="1px gray solid";
+    }
+  else {
+      document.getElementById("reading_key").style.opacity="0";
+      document.getElementById("instructions_icon").style.color="white";
+        document.getElementById("instructions_icon").style.border="1px white solid";
+  }
+}
+    
+    
     
 // Get the modal
 var modal = document.getElementById("myModal");

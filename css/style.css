@@ -57,13 +57,14 @@ a:hover, a:focus {
     top:0;
     left:0;
     z-index:3;
+    transition:1s;
 }
 
 .instructions {
     position:fixed;
     left:5rem;
     top:1.5rem;
-    max-width:50vw;
+    max-width:80vw;
     
     z-index:3;
     color:white;
@@ -72,14 +73,18 @@ a:hover, a:focus {
     visibility:hidden;
 }
 
+.instructions_icon:hover {
+    cursor:pointer;
+}
+
 .instructions_icon:hover .instructions{
     visibility:visible;
     animation: fadein ease 1s;
 }
 
 p {
-    margin:10px;
-    padding:10px;
+    margin:.35rem 1rem;
+    padding:.35rem 1rem;
     font-weight:400;
     line-height:1.5em;
     max-width:800px;
@@ -88,7 +93,6 @@ p {
 
 hr {
     background-color:#92AD8B;
-    color:#92AD8B;
     border: none;
     height: .1px;
 }
@@ -103,17 +107,43 @@ sup {
     vertical-align: top; 
     font-size: 0.6em; 
     line-height:1.5em;
-    padding:5px;
+    padding:0em 0.4em 0em .3em;
+}
+
+sup.footnote {
+    color:white;
 }
 
 footnote { 
     margin:0px;
     padding:5px;
-    font-size: 0.6em; 
+    font-size: .8em; 
     line-height:1.5em;
     max-width:800px;
 }
 
+.smalltext {
+    font-size:.7em;
+}
+
+.caption {
+    font-size:.8em;
+}
+
+/*don't use this for text blocks that start a modal, cause then the top margin/padding will be be too tight*/
+.compresstext {
+    margin-top:-.3em;
+    line-height:1.4em;
+}
+
+/*
+.outlined {
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}*/
 
 /*this wont work because technically there isn't an image in any given area, it's all just one big image
 #bg area:hover {
@@ -210,6 +240,7 @@ button {
     position:absolute;
     opacity:0.8;
     filter:blur(3px);
+    z-index:2;
 }
 
 .chapter0 {
@@ -304,7 +335,7 @@ button {
 }
 
 .modal-content {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.6);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -324,6 +355,11 @@ button {
     
 }
 
+.modal-content.withbg {
+    background-color: rgba(0,0,0,.7);
+    border: none;
+}
+
 .modal-content p {
     width: 80%;
     max-width:800px;
@@ -339,9 +375,41 @@ button {
     max-width:800px;
 }
 
-.modal-content img {
-    max-width:50%;
+.modal-content .img_row {
+    text-align:center;
+    width:80%; 
+    max-width:800px;
+}
+
+.modal-content .img_row * {
+    display:inline-block;
+    width:45%;
     max-height:100%;
+    padding:0% 2.5%;
+}
+
+.modal-content img {
+    max-width:80%;
+    max-height:100%;
+    padding:10px;
+}
+
+.iframe_container {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive_iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* The Close Button */
@@ -349,8 +417,8 @@ button {
     color: #aaaaaa;
     position:absolute;
     z-index:10;
-    right:1%;
-    top:1%;
+    right:15px;
+    top:5px;
     font-weight: bold;
 }
 
@@ -363,46 +431,6 @@ button {
 
 
 
-
-/*SUBPAGE STYLING (OUTDATED)
-.centered {
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items:center;
-    align-content:flex-start;
-    
-    width:100%;
-    height:100%;
-    margin-top:50px;
-    
-}
-
-.centered img {
-    max-width:100%;
-    max-height:100%;
-}
-
-.backbutton {
-    border: none;
-    color: white;
-    padding: 50px 50px;
-    text-align: center;
-    text-decoration: none;
-    position: fixed;
-    z-index:2;
-    bottom:20px;
-    right:20px;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    
-    background-image:url("../images/favicon/favicon_original.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-*/
 
 /* new (failed) tooltip 
 .tooltip {
@@ -450,27 +478,34 @@ button {
 /* (ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬) COME BACK TO tHIS */
 /* TOOLTIP */
 .tooltip {
-  position: relative;
-  display: inline-block;
-    filter: brightness(120%);
+    position: relative;
+    display: inlin;
+    color:#BBDAB3;
+    transition:.5s;
+}
+
+.tooltip:hover {
+    cursor:pointer;
+    color:#6D8068;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-    filter: brightness(80%);
   width: 300px;
-  background-color: DarkSeaGreen;
+  background-color: black;
   color: white;
   font-size: 75%;
   line-height: 150%;
   text-align: left;
+    border: 1px darkseagreen solid;
   border-radius: 6px;
   padding: 10px 10px;
-  position: fixed;
-  z-index: 1;
+  position: absolute;
+  z-index: 10;
   top: 100%;
-  left: 150%;
+  left: 50%;
   margin-left: -150px;
+    
 }
 
 .tooltip .tooltiptext::after {
@@ -486,39 +521,18 @@ button {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+    animation: fadein 1s;
 }
 
-
-.opioidsunrise {
-  background-image: url("images/afghan poppy field sun rise.jpg");
-  background-attachment: fixed; 
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+/* (ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬) THIS ONLY WORKS WhEN Z-INDEX IS NEGATIVE??? */
 /*Remember to figure out how to loop reverse video!!!!*/
 .bg_video {
     position:fixed;
-    z-index:1;
+    z-index:-1;
     right: 0;
     bottom: 0;
     min-width: 100vw; 
     min-height: 100vh;
-}
-
-.neoliberalbreeding {
-  background-image: url("vids/dreamflowers.mp4");
-  background-attachment: fixed; 
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.scoredpoppy {
-  background-image: url("images/scoredpoppy.png");
-  background-attachment: fixed; 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right bottom;
 }
 
 @media only screen and (max-width: 800px) {
@@ -526,3 +540,45 @@ button {
     width:400px;
   }
 }
+
+
+
+/*SUBPAGE STYLING (OUTDATED)
+.centered {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:center;
+    align-content:flex-start;
+    
+    width:100%;
+    height:100%;
+    margin-top:50px;
+    
+}
+
+.centered img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.backbutton {
+    border: none;
+    color: white;
+    padding: 50px 50px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    z-index:2;
+    bottom:20px;
+    right:20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+    background-image:url("../images/favicon/favicon_original.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/

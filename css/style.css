@@ -23,7 +23,7 @@ a {
 }
 
 a:visited {
-    
+    color:#4A6443;
 }
 
 a:hover, a:focus {
@@ -46,6 +46,11 @@ a:hover, a:focus {
 
 .instructions_icon {
     color:white;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
     font-weight:700;
     font-size:1.3rem;
     padding:.2rem 1rem;
@@ -63,7 +68,7 @@ a:hover, a:focus {
 .instructions {
     position:fixed;
     left:5rem;
-    top:1.5rem;
+    top:.75rem;
     max-width:80vw;
     
     z-index:3;
@@ -75,6 +80,7 @@ a:hover, a:focus {
 
 .instructions_icon:hover {
     cursor:pointer;
+    background-image: linear-gradient(rgba(148, 3, 252, 0.5), rgba(3, 252, 78, 0.5), rgba(148, 3, 252, 0.5));
 }
 
 .instructions_icon:hover .instructions{
@@ -88,7 +94,6 @@ p {
     font-weight:400;
     line-height:1.5em;
     max-width:800px;
-    z-index:3;
 }
 
 hr {
@@ -102,7 +107,6 @@ hr {
     100% {opacity:1;}
 }
 
-
 sup { 
     vertical-align: top; 
     font-size: 0.6em; 
@@ -111,7 +115,7 @@ sup {
 }
 
 sup.footnote {
-    color:white;
+    color:#BBDAB3;
 }
 
 footnote { 
@@ -136,21 +140,21 @@ footnote {
     line-height:1.4em;
 }
 
-/*
-.outlined {
-    text-shadow:
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-}*/
-
-/*this wont work because technically there isn't an image in any given area, it's all just one big image
-#bg area:hover {
-    filter:blur(2px);
-    filter:hue-rotate(180);
+.blocktext {
+    border:1px #6D8068 solid;
+    width: 60%;
 }
-*/
+
+/*(ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬)
+Why doesn't the text center????'*/
+.modal-content .blocktext p {
+    margin:0 auto;
+    width:95%;
+    padding:1em;
+    line-height: 1.65rem;
+    font-size:1.3rem;
+    
+}
 
 
 .fg {
@@ -356,8 +360,14 @@ button {
 }
 
 .modal-content.withbg {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,0);
     border: none;
+}
+
+.modal-content.withbg p {
+    background-color: rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    border-radius:20px;
 }
 
 .modal-content p {
@@ -394,6 +404,84 @@ button {
     padding:10px;
 }
 
+.modal-content .poppynoid {
+    position:absolute;
+    z-index:11;
+    width:50%;
+    height:auto;
+    max-width:none;
+    max-height:none;
+    
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+    
+    /* (ʘ言ʘ╬)(ʘ言ʘ╬)(ʘ言ʘ╬) 
+    What overflow do I need to use to stop the vertical floating animations from doing that jagged elongation of the window each time the poppynoids bob down?? */
+    overflow-y:hidden;
+}
+
+@keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 5px); } 
+    100%   { transform: translate(0, -0px); }     
+} 
+
+.flicker1 {
+    animation: flickering1 linear 6s infinite alternate;
+}
+
+@keyframes flickering1 {
+    0% {
+    opacity:0.1;
+    }
+    30% {
+    opacity:0.4;
+     }
+    50% {
+    opacity:.3;
+    }
+    70% {
+    opacity:0.5;
+    }
+    100% {
+    opacity:1;
+    }
+}
+
+.flicker2 {
+    animation: flickering2 linear 8s infinite alternate;
+    transition:1s;
+}
+
+@keyframes flickering2 {
+    0% {
+    opacity:0.2;
+    }
+    10% {
+    opacity:0.6;
+    }
+    30% {
+    opacity:0.3;
+     }
+    50% {
+    opacity:.7;
+    }
+    60% {
+    opacity:0.2;
+    }
+    70% {
+    opacity:0.6;
+    }
+    80% {
+    opacity:0.4;
+    }
+    100% {
+    opacity:1;
+    }
+}
+
 .iframe_container {
   position: relative;
   width: 80%;
@@ -422,14 +510,11 @@ button {
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
+.close:hover, .close:focus {
+  color: #DE3F25;
   text-decoration: none;
   cursor: pointer;
 }
-
-
 
 
 /* new (failed) tooltip 
@@ -479,7 +564,7 @@ button {
 /* TOOLTIP */
 .tooltip {
     position: relative;
-    display: inlin;
+    display: inline;
     color:#BBDAB3;
     transition:.5s;
 }
@@ -490,24 +575,25 @@ button {
 }
 
 .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 300px;
-  background-color: black;
-  color: white;
-  font-size: 75%;
-  line-height: 150%;
-  text-align: left;
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-size: 75%;
+    line-height: 150%;
+    text-align: left;
     border: 1px darkseagreen solid;
-  border-radius: 6px;
-  padding: 10px 10px;
-  position: absolute;
-  z-index: 10;
-  top: 100%;
-  left: 50%;
-  margin-left: -150px;
+    border-radius: 6px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 11;
     
+    top: 100%;
+    left: 50%;
+    margin-left: -150px; /* Use half of the tooltiptext width (300/2 = 150), to center the tooltip */
 }
 
+/*tooltip arrow*/
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
@@ -518,6 +604,7 @@ button {
   border-style: solid;
   border-color: transparent transparent DarkSeaGreen transparent;
 }
+
 
 .tooltip:hover .tooltiptext {
   visibility: visible;

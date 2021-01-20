@@ -31,6 +31,24 @@ a:hover, a:focus {
 
 }
 
+.popup {
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    height: 100vh;
+    
+    position: fixed;
+    z-index: 20;
+    
+    padding: 50px;
+    background: rgba(0, 0, 0, .75);
+    
+    display: none;
+    
+    color:white;
+    
+}
+
 /*HOMEPAGE STYLING*/
 
 #container {
@@ -628,7 +646,11 @@ button {
   }
 }
 
-
+@media (orientation: portrait) and (max-width: 500px) {
+    .popup {display: flex;}
+    
+    html, body {overflow:hidden;}
+}
 
 /*SUBPAGE STYLING (OUTDATED)
 .centered {

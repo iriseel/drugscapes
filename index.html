@@ -42,7 +42,7 @@
 <body>
 
     <div class="popup">
-        To experience this website as intended, please change your device to landscape orientation or a laptop.
+        To experience this website as intended, please change your device to landscape orientation or, better yet, switch to a laptop.
     </div>
     
     <div id="container">
@@ -1226,14 +1226,22 @@ span9.onclick = function() {modal9.style.display = "none";}
 span10.onclick = function() {modal10.style.display = "none";}
 span11.onclick = function() {modal11.style.display = "none";}
 span12.onclick = function() {modal12.style.display = "none";}
-span13.onclick = function() {modal13.style.display = "none";}
+span13.onclick = function() {modal13.style.display = "none";
+                             //stopping youtube video from playing when modal is closed
+                            var iframe = document.getElementsByTagName( 'iframe')[0];
+                            var iframeSrc = iframe.src;
+                            iframe.src = iframeSrc;
+                             //stopping video from playing when modal is closed
+                            document.getElementsByTagName("video")[2].pause();document.getElementsByTagName("video")[2].currentTime = 0;}
 span14.onclick = function() {modal14.style.display = "none";}
 span15.onclick = function() {modal15.style.display = "none";}
 span16.onclick = function() {modal16.style.display = "none";}
-span17.onclick = function() {modal17.style.display = "none";}
+span17.onclick = function() {modal17.style.display = "none";
+                             document.getElementsByTagName("video")[3].pause();document.getElementsByTagName("video")[3].currentTime = 0;}
 span18.onclick = function() {modal18.style.display = "none";}
 span19.onclick = function() {modal19.style.display = "none";}
-span20.onclick = function() {modal20.style.display = "none";}
+span20.onclick = function() {modal20.style.display = "none";
+                             document.getElementsByTagName("video")[4].pause();document.getElementsByTagName("video")[4].currentTime = 0;}
 span21.onclick = function() {modal21.style.display = "none";}
 span22.onclick = function() {modal22.style.display = "none";}
 span23.onclick = function() {modal23.style.display = "none";}
@@ -1258,14 +1266,22 @@ if (event.target == modal9) {modal9.style.display = "none";}
 if (event.target == modal10) {modal10.style.display = "none";}
 if (event.target == modal11) {modal11.style.display = "none";}
 if (event.target == modal12) {modal12.style.display = "none";}
-if (event.target == modal13) {modal13.style.display = "none";}
+if (event.target == modal13) {modal13.style.display = "none";
+                              //stopping youtube video from playing when modal is closed
+                            var iframe = document.getElementsByTagName('iframe')[0];
+                            var iframeSrc = iframe.src;
+                            iframe.src = iframeSrc;
+                              //stopping video from playing when modal is closed
+                            document.getElementsByTagName("video")[2].pause();document.getElementsByTagName("video")[2].currentTime = 0;}
 if (event.target == modal14) {modal14.style.display = "none";}
 if (event.target == modal15) {modal15.style.display = "none";}
 if (event.target == modal16) {modal16.style.display = "none";}
-if (event.target == modal17) {modal17.style.display = "none";}
+if (event.target == modal17) {modal17.style.display = "none";
+                             document.getElementsByTagName("video")[3].pause();document.getElementsByTagName("video")[3].currentTime = 0;}
 if (event.target == modal18) {modal18.style.display = "none";}
 if (event.target == modal19) {modal19.style.display = "none";}
-if (event.target == modal20) {modal20.style.display = "none";}
+if (event.target == modal20) {modal20.style.display = "none";
+                             document.getElementsByTagName("video")[4].pause();document.getElementsByTagName("video")[4].currentTime = 0;}
 if (event.target == modal21) {modal21.style.display = "none";}
 if (event.target == modal22) {modal22.style.display = "none";}
 if (event.target == modal23) {modal23.style.display = "none";}
